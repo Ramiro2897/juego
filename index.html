@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis:wght@200;400;600&family=Montserrat:wght@100;200;500&family=Sunshiney&family=Titillium+Web:ital,wght@0,200;0,300;0,900;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="redes">
+    <p>Creado por: Ramiro González</p>
+  </div>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <p>Por favor, ingresa una palabra válida.</p>
+    </div>
+  </div>
+  
+  <div id="modal-background" class="modal-background"></div>
+  
+  <h4>El ahorcado</h4>
+
+  <p>Elige una palabra</p>
+  <div class="content">
+    <input type="text" id="palabraInput">
+    <button id="guardarBtn">Agregar palabra</button>
+  </div>
+  
+
+  <div class="ahorcado">
+
+    <div id="palabraGuardada" class="palabra-guardada"></div>
+    <div class="add">
+      <input type="text"  id="add-letter">
+      <button id="guardarBtn-two">Agregar letra</button>
+      <div id="letrasAdivinadas" class="letras-adivinadas"></div>
+    </div>
+
+    <div class="message">
+      <p class="message-add"></p>
+    </div>
+
+    <div class="message-gameOver">
+      <p class="message-gameOver-two"></p>
+      <p class="word-guess"></p>
+    </div>
+
+    <div class="animation">
+      <div class="rope"></div>
+      <div class="head"></div>
+      <div class="body"></div>
+      <div class="arm-right"></div>
+      <div class="arm-left"></div>
+      <div class="leg-right"></div>
+      <div class="leg-left"></div>
+
+    </div>
+  </div>
+
+  <button class="end-game">Volver a jugar</button>
+  
+
+  <script src="index.js"></script>
+</body>
+</html>

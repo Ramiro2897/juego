@@ -1,0 +1,370 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(248, 246, 246);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Dosis', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Sunshiney', cursive;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.redes {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h4{
+  color: rgb(149, 145, 199);
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+p{
+  color: #141414;
+  letter-spacing: 1px;
+  font-size: 12px;
+}
+
+input{
+  width: 60%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.content{
+  width: 80%;
+  height: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+#palabraGuardada {
+  width: 100%;
+  height: auto;
+}
+
+.content #guardarBtn{
+  border: none;
+  width: auto;
+  height: 30px;
+  padding: 2px;
+  border-radius: 5px;
+  background-color: rgb(47, 42, 99);
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 2px 4px 2px 0px rgb(149, 145, 199);
+  font-size: 10px;
+}
+
+.content #guardarBtn:hover{
+  background-color: rgb(30, 27, 66);
+}
+
+.ahorcado {
+  width: 60%;
+  height: 60vh;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 2px #ccc6c6;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative; 
+}
+
+.animation {
+  width: 80px;
+  height: 80px;
+  box-shadow: 0 0 10px 2px #ccc6c6;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  bottom: 50px;
+  transform: translateY(50%);
+}
+
+.rope{
+  position: relative;
+  width: auto;
+  height: 80px;
+  border-left: 1px solid #141313;
+}
+
+.head {
+  width: 15px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid rgb(26, 24, 24);
+  background-color: #2b2929;
+}
+
+.body {
+  width: auto;
+  height: 100px;
+  border-left: 1px solid #0e0c0c;
+}
+
+.arm-right{
+  position: relative;
+  width: auto;
+  height: 90px;
+  border-left: 1px solid #1d1b1b;
+  transform: rotate(15deg);
+  top: -13px;
+  right: 2px;
+}
+
+.arm-left{
+  position: relative;
+  width: auto;
+  height: 80px;
+  border-left: 1px solid #121213;
+  transform: rotate(-27deg);
+  top: -25px;
+  right: -3px;
+}
+
+.leg-right{
+  position: relative;
+  right: 2px;
+  top: -24px;
+  width: auto;
+  height: 90px;
+  border-left: 1px solid #1a1616;
+  transform: rotate(15deg);
+}
+
+.leg-left{
+  position: relative;
+  left: 3px;
+  top: -36px;
+  width: auto;
+  height: 90px;
+  border-left: 1px solid #030303;
+  transform: rotate(-15deg);
+}
+
+#palabraGuardada{
+  width: auto;
+  height: auto;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+
+.letra-cuadro {
+  display: inline-block;
+  width: 20px; 
+  height: 20px; 
+  text-align: center;
+  margin-right: 5px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #0e0c0c;
+  text-transform: uppercase;
+}
+
+.end-game{
+  padding: 8px;
+  margin-top: 10px;
+  border: none;
+  font-size: 10px;
+  background-color: #3f3b3b;
+  box-shadow: 2px 2px 2px #181616;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  background-color: rgb(47, 42, 99);
+  box-shadow: 2px 4px 2px 0px rgb(149, 145, 199);
+}
+
+.end-game:hover {
+  background-color: #111010;
+  background-color: rgb(30, 27, 66);
+}
+
+.add{
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.add button{
+  padding: 3px;
+  border: none;
+  height: 30px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 10px;
+  background-color: #111010;
+  box-shadow: 2px 2px 2px #181616;
+  cursor: pointer;
+  background-color: rgb(47, 42, 99);
+  box-shadow: 2px 4px 2px 0px rgb(149, 145, 199);
+}
+
+.add input{
+  width: 30px;
+  height: auto;
+  border-radius: 5px;
+  background-color: #575454;
+  color: #fff;
+}
+
+.add button:hover{
+  background-color: rgb(30, 27, 66);
+}
+
+.message{
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.message p{
+  font-size: 12px;
+}
+
+.frio{
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5);
+  animation: changeBox 2s infinite;
+}
+
+@keyframes changeBox {
+  0% {
+    box-shadow: 0 0 10px 10px rgba(27, 72, 221, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 10px 10px rgba(85, 133, 204, 0.5); 
+  }
+  100% {
+    box-shadow: 0 0 10px 10px rgba(17, 46, 206, 0.5);
+  }
+}
+
+.caliente {
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5);
+  animation: changeBoxS 2s infinite;
+}
+
+@keyframes changeBoxS {
+  0% {
+    box-shadow: 0 0 10px 10px rgba(224, 240, 5, 0.829);
+  }
+  50% {
+    box-shadow: 0 0 10px 10px rgba(209, 218, 91, 0.829); 
+  }
+  100% {
+    box-shadow: 0 0 10px 10px rgba(206, 219, 17, 0.829);
+  }
+}
+
+.quemado {
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5);
+  animation: changeBoxShadow 2s infinite;
+}
+
+@keyframes changeBoxShadow {
+  0% {
+    box-shadow: 0 0 10px 10px rgba(233, 41, 16, 0.829);
+  }
+  50% {
+    box-shadow: 0 0 10px 10px rgba(224, 101, 79, 0.829);
+  }
+  100% {
+    box-shadow: 0 0 10px 10px rgba(233, 60, 16, 0.829);
+  }
+}
+
+.message-gameOver-two{
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  letter-spacing: 2px;
+  font-weight: 400;
+  animation: scaleAnimation 2s infinite;
+}
+
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(1.5); 
+  }
+  50% {
+    transform: scale(1.3); 
+  }
+  100% {
+    transform: scale(1); 
+  }
+}
+
+.word-guess{
+  color: #3fd646;
+  font-size: 12px;
+  margin-top: 20px;
+  animation: scaleAnimation-two 2s infinite;
+}
+
+@keyframes scaleAnimation-two {
+  0% {
+    transform: scale(1); 
+  }
+  50% {
+    transform: scale(1.1); 
+  }
+  100% {
+    transform: scale(1); 
+  }
+}
+
+/* Estilo del modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+/* Estilo de la capa de fondo del modal */
+.modal-background {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 9998;
+}
